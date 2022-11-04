@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    justify-content: center;
+    background:linear-gradient(to right,#333399, #ff00cc);
+    font-family: sans-serif;
+}
+.container{
+    width: 360px;
+    height: 420px;
+    background-color: rgba(255, 255,255,0.5);
+    top: 4%;
+    left: 35%;
+    border-radius: 10px;
+    position: relative;
+}
+div.active {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+.container::after{
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.18) ;
+    transform: rotate(-12deg);
+    border-radius: 10px;
+    z-index: -1;
+    inset: 0;
+    content: "";
+}
+.container img{
+    width: 90px;
+    margin-bottom:40px;
+    left:40%;
+    top:4%;
+    position: relative;
+}
+.container .text{
+    text-align: center;
+    color: rgb(81, 86 ,90);
+}
+.text h1{
+    font-size: 24px;
+}
+.inputIcon i{
+    position: absolute;
+}
+form{
+    padding: 7px;
+    position: relative;
+    left: 22%;
+    top: 5%;
+}
+.inputIcon{
+    margin-bottom: 15px;
+}
+.icon {
+    padding: 10px;
+    color: #333;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+::-moz-placeholder {
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  :-ms-input-placeholder {
+    color: #ffffff;
+    font-size: 16px;
+  }
+::placeholder{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.chekbox{
+    padding: 10px 0px;
+}
+.chekbox label{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.btn{
+    padding: 10px 15px;
+    background-color: palevioletred;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgb(209, 133, 133);
+  color: #fff;
+  border-radius: 5px;
+   
+}
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .footer a:hover {
+    color: blue;
+  }
+  input{
+    background-color:rgba(255, 255, 255, 0.18) ;
+    padding: 5px;
+    border-radius: 5px;
+    
+  }
+
+   @media (max-width: 420px) {
+    .container {
+      height:400px;
+      width: 280px; 
+      margin: 0px -80px;
+    }
+  
+    form{
+      padding: 2px;
+      position: relative;
+      left: 15%;
+      top: 5%;
+    }
+    .container img {
+      width: 80px;
+      margin-bottom: 40px;
+      position: relative;
+      left: 15%;
+      top: 5%;
+    }
+  } 
+  @media (max-width: 280px) {
+    .container {
+      height: 400px;
+      width: 240px;
+     
+    }
+  }
